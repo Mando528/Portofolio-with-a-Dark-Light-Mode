@@ -1,0 +1,136 @@
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.active{
+    --primary-color:#000306;
+    --secondary-color:#fff;
+}
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:105px;
+    padding-right:105px;
+    width:100%;
+    height: 100vh;
+    background-color:var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    position: relative;
+    top:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:80px;
+}
+.nav{
+    flex:1;
+    text-align: right;
+}
+ul{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color:blue;
+}
+ul li{
+    font-size:1.05em;
+    list-style: none;
+    margin-right:30px;
+    color:yellow;
+}
+ul li a{
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+.icon{
+    width:40px;
+    cursor:pointer;
+}
+ul li a:hover{
+    color:#ff4321;
+}
+.content{
+    position: relative;
+    top:30%;
+    display: flex;
+    align-items: center;
+}
+.content .text{
+    color:var(--secondary-color);
+    flex-basis:50%;
+}
+.content .text h1{
+    font-size:3.9em;
+}
+.content .text h1 span{
+    color:#ff4321;
+}
+.content .text small{
+    margin-top:5px;
+    line-height: 1.5;
+    font-size:0.85em;
+    display: block;
+}
+.content .text button{
+    color:var(--primary-color);
+    background-color:var(--secondary-color);
+    padding:6px 6px;
+    margin-top:30px;
+    border:1px solid var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content .images {
+    
+    flex-basis:50%;
+}
+.content .images img{
+    position: absolute;
+    right:30px;
+    top:-50%;
+    transition: 0.8s;
+}
+.content .images .pattern{
+    width:500px;
+    height: 450px; 
+}
+.content .images .girl{
+    right:8%;
+    top:-70%;
+    width:350px;
+    height: 550px;
+}
+
+.content .images:hover .pattern{
+    top: -60%;
+}
+.content .images:hover .girl{
+    right:5%;
+}
+
+.footer{
+    position: absolute;
+    bottom:70px;
+}
+.footer a{
+    color:var(--secondary-color);
+    margin-right:5px;
+}
+.footer a i{
+    font-size:1.5em;
+}
+.footer a:hover{
+    color:#ff4321;
+}
